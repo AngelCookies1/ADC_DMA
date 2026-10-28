@@ -1,0 +1,53 @@
+# ============================================================
+# CubeMX 生成代码时会重写本文件（只留下面三行），
+# 本机专属规则请放到 .git/info/exclude，那里它不碰。
+# ============================================================
+build
+mx.scratch
+!.settings
+
+# ---------------- 构建目录 ----------------
+build/
+cmake-build-*/
+Debug/
+Release/
+
+# ---------------- 编译中间产物 ----------------
+*.o
+*.d
+*.su
+*.lst
+*.map
+*.elf
+*.bin
+*.hex
+*.axf
+
+# ---------------- 编辑器 / IDE ----------------
+.vscode/
+.idea/
+*.code-workspace
+*.uvguix.*
+*.uvoptx
+*.uvprojx
+
+# ---------------- Python（tools 目录） ----------------
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---------------- 系统垃圾 ----------------
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ---------------- 本地临时文件 ----------------
+*.log
+*.tmp
+*.bak
+*.orig
+
+# VS Code / CMake Tools 生成的本机配置
+.clangd
+.settings/
